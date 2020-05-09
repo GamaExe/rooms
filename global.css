@@ -7,8 +7,9 @@
 }
 
 body{
-    /* background: url("./assets/imgEdit.png") no-repeat; */
-    /* z-index: -1; */
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 2.5rem;
 }
 
 .navbar{
@@ -77,6 +78,20 @@ body{
 .navbar .navbar-lista a{
     color: white;
     text-decoration: none;
+}
+
+.rodape{
+    color: white;
+    font-family: Pathway Gothic One, 'Times New Roman';
+    background: #652F4F;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    height: 2.5rem; 
 }
 
 @media (min-width: 500px) {
