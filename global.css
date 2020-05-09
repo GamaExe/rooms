@@ -59,6 +59,7 @@ body{
 
     background-color: #652F4F;
     list-style: none;
+    z-index: 3;
 }
 
 .navbar .navbar-lista li{
