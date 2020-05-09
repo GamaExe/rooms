@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    width: 100%;
+    min-height: 50px;
+    background-color: #652F4F;
+    color: white;
+    font-family: Pathway Gothic One, 'Times New Roman';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1{
+    margin-left: 20px;
+}
+
+.img-hamburguer{
+    max-width: 30px;
+    max-height: 30px;
+    margin-right: 20px;
+}
+
+.navbar .navbar-lista{
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    background-color: #652F4F;
+    list-style: none;
+}
+
+.navbar .navbar-lista li:hover{
+    background-color: rgba(161, 116, 143);
+}
+
+.navbar .navbar-lista a{
+    color: white;
+    text-decoration: none;
+}
