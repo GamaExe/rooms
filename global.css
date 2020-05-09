@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
 
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body{
+    /* background: url("./assets/imgEdit.png") no-repeat; */
+    /* z-index: -1; */
 }
 
 .navbar{
@@ -20,22 +26,47 @@
     margin-left: 20px;
 }
 
-.img-hamburguer{
+.navbar .img-hamburguer{
     max-width: 30px;
     max-height: 30px;
     margin-right: 20px;
 }
 
+.navbar .checkbox{
+    position: absolute;
+    right: 19px;
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.navbar .checkbox:checked + .navbar-lista{
+    display: flex; 
+    flex-direction: column;  
+    transition: right 1s ease-in-out;
+    right: 0;  
+}
+
 .navbar .navbar-lista{
     position: absolute;
-    width: 100%;
+    width: 200px;
+    right: -200px;
+    transition: right 1s ease-out;
     top: 50px;
-    display: flex;
-    flex-direction: column;
+    display: none;
     text-align: center;
 
     background-color: #652F4F;
     list-style: none;
+}
+
+.navbar .navbar-lista li{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .navbar .navbar-lista li:hover{
@@ -45,4 +76,39 @@
 .navbar .navbar-lista a{
     color: white;
     text-decoration: none;
+}
+
+@media (min-width: 500px) {
+    
+    .navbar .img-hamburguer{
+        display: none;
+    }
+    .navbar .checkbox{
+        display: none;
+    }
+    .navbar .navbar-lista{
+        min-width: 300px;
+        display: flex;
+        position: initial;
+    }
+    .navbar .navbar-lista li{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .navbar .navbar-lista li:hover{
+        text-decoration: underline;
+        background-color: #652F4F;
+    }   
+}
+
+@media (min-width: 768px) {
+    .navbar h1{
+        font-size: 30px;
+    }
+    .navbar .navbar-lista{
+        width: 400px;
+    }
+    .navbar .navbar-lista a{
+        font-size: 25px;
+    }
 }
