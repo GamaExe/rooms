@@ -20,12 +20,13 @@
     </nav>
     <main class='container'>
         <p>Aqui temos o lugar ideal para você se hospedar</p>
-        <form>
-            <input type="text" placeholder="   local de hospedagem"/>
-            <input type="text" placeholder="   período"/>
-            <button onclick=""><img src="./assets/search-wht.svg"/>Buscar</button>
+        <form id="home-busca">
+            <input type="text" id="local" placeholder="   local de hospedagem"/>
+            <input type="text" id="periodo" placeholder="   período"/>
+            <button onClick="call()" type="submit" ><img src="./assets/search-wht.svg"/>Buscar</button>
         </form> 
     </main>
     <footer class="rodape">Room Copyright &copy 2020</footer>
+    <script type="text/javascript" src="./home/script.js"></script>
 </body>
 </html>
