@@ -27,6 +27,10 @@
     justify-content: center;
     flex-wrap: wrap;
 }
+.container .home-busca{
+    display: flex;
+    flex-direction: column;
+}
 
 .container form input, button{
     border-radius: 5px;
@@ -47,4 +51,11 @@
     align-items: center;
     justify-content: space-around;
     padding: 5px;
+}
+
+@media (min-width: 768px) {
+    .container .home-busca{
+        display: flex;
+        flex-direction: row;
+    }
 }

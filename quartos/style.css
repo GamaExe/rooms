@@ -2,6 +2,7 @@
 
 .container{
     background: #EBDCEF;
+    height: calc(100vh - 90px);    
 }
 
 .container h2{
@@ -21,8 +22,10 @@
 .container .quadros{
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: flex-start;   
+    max-height: calc(100vh - 150px); 
+    overflow: auto;
 }
 
 .container .quadro{
@@ -30,7 +33,6 @@
     font-size: 25px;
     background: #462F49 ;
     color: white;
-    margin: 10px;
     border-radius: 10px;
     border: 1px solid gray;
     width: 300px;
@@ -38,6 +40,7 @@
     padding: 5px;
     display: flex;
     flex-wrap: wrap;
+    margin: 10px auto;
 }
 .container .quadro .grupo-info{
     width: 100%;
@@ -73,5 +76,41 @@
     .container .quadro .grupo-info{
         width: 50%;
         height: 100%;
+        position: relative;
+    }
+
+    .container .quadro .preco{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        margin-bottom: 10px;
     }
 }
+
+@media (min-width: 800px) {
+    .container .quadro{
+        margin: 0px;
+    }
+}
+
+@media (min-width: 850px) {
+    .container .quadros{
+        display: flex;
+        justify-content: flex-start; 
+        flex-wrap: wrap;
+        max-width: 900px;
+        margin: 0 auto;   
+    }
+    .container .quadro{
+        margin: 10px;
+    }
+}
+
+@media (min-width: 1300px) {
+    .container .quadros, .dadosBusca{
+        max-width: 1300px;
+        margin: 0 auto;  
+    }
+}
+
+
