@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
 
-.container{
-    background: #EBDCEF;
-    height: calc(100vh - 90px);    
-}
-
 .container h2{
     font-family: Pathway Gothic One, 'Times New Roman';
     font-size: 20px;
@@ -64,7 +59,18 @@
     height: 50%;
 }
 
+@media (max-width: 499px) {
+    .container{
+        background: #EBDCEF;
+        height: calc(100vh - 123px);    
+    }
+}
+
 @media (min-width: 500px) {
+    .container{
+        background: #EBDCEF;
+        height: calc(100vh - 90px);    
+    }
     .container .quadro{
         min-width: 400px;
     }

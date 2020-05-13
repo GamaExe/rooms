@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
 
+.container{
+    height: calc(100vh - 50px); 
+}
 .texto{
     font-family: Pathway Gothic One, 'Times New Roman';
     display: flex;
